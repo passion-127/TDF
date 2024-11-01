@@ -212,7 +212,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
-      - uses: bufbuild/buf-setup-action@480a0ee8a588045b52a847b48138c6f377a89519
+      - uses: bufbuild/buf-setup-action@5d38b66514ec5b6b7b753e133245555ea664d0ac
       - uses: bufbuild/buf-lint-action@044d13acb1f155179c606aaa2e53aea304d22058
         with:
           input: service
