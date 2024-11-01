@@ -91,7 +91,7 @@ jobs:
           git diff
         env:
           GONOSUMDB: github.com/opentdf/platform/${{join(fromJson(needs.release-please.outputs.paths_released), ',github.com/opentdf/platform/')}}
-      - uses: planetscale/ghcommit-action@b662a9d7235a07e80d976152ed5afe41651c4973
+      - uses: planetscale/ghcommit-action@d4176bfacef926cc2db351eab20398dfc2f593b5
         with:
           commit_message: "fix(core): Autobump ${{ matrix.path }}"
           repo: ${{ github.repository }}
