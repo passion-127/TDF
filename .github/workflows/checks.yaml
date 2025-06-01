@@ -92,7 +92,7 @@ jobs:
         if: env.IS_RELEASE_BRANCH == 'true'
         working-directory: ${{ matrix.directory }}
       - name: golangci-lint
-        uses: golangci/golangci-lint-action@9d1e0624a798bb64f6c3cea93db47765312263dc
+        uses: golangci/golangci-lint-action@4afd733a84b1f43292c63897423277bb7f4313a9
         with:
           version: v1.58
           working-directory: ${{ matrix.directory }}
